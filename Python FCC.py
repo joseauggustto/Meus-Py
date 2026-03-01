@@ -20,4 +20,14 @@ my_str = "Hello"
 print("Hello" in my_str)
 print('World' in my_str)
 
+#Comando len, usado para saber quantos caracteres tem a String
+
 print(len(my_str))
+
+#Para selecionar um caractere pelo número, basta por [] com o número dentro.
+
+my_string_1 = 'oi'
+my_string_2 = 'olá'
+
+exit = my_string_1 + '' + my_string_2
+print(exit)
