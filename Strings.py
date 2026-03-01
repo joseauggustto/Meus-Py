@@ -32,7 +32,6 @@ print(alo[1:6]) #lembre-se que ele conta a partir do 0, a saída aqui será 'lam
 print(alo[2:7:2])
 print(alo[::-1])
 
-
 #Concatenando Strings
 my_string_1 = 'oi'
 my_string_2 = 'olá'
@@ -40,3 +39,7 @@ my_string_2 = 'olá'
 exit = my_string_1 + ' ' + my_string_2
 print(exit)
 
+# Todos os carcateres de uma string em maíusculo
+
+aloupper = alo.upper()
+print(aloupper)
