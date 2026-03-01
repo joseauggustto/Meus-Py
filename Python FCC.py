@@ -26,8 +26,17 @@ print(len(my_str))
 
 #Para selecionar um caractere pelo número, basta por [] com o número dentro.
 
+alo = 'olameunoméaí'
+print(alo[5])
+print(alo[1:6]) #lembre-se que ele conta a partir do 0, a saída aqui será 'lameu'
+print(alo[2:7:2])
+print(alo[::-1])
+
+
+#Concatenando Strings
 my_string_1 = 'oi'
 my_string_2 = 'olá'
 
-exit = my_string_1 + '' + my_string_2
+exit = my_string_1 + ' ' + my_string_2
 print(exit)
+
