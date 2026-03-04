@@ -1,37 +1,38 @@
 #Vamos lá...
 
-distance_mi = 1
+distance_mi =  0.6
 is_raining = True
 has_bike = True 
 has_car = False 
 has_ride_share_app = True 
 
-if distance_mi <= 3 and is_raining == False:
-    print('Vai de Bike')
-
-elif distance_mi <= 3 and is_raining == True:
-    print('Use um app de carro')
-
-else:
-    print('Não vai')
-
 # -------------------------
 
+# Curta distância - até 1 milha. 
 
-if distance_mi > 1 and distance_mi <= 6 and is_raining == True and has_bike == False: #18
-    print(False)
+if distance_mi < 1:
+    if is_raining == True:
+        print('False')
+    elif is_raining == False:
+        print('False')
 
-if distance_mi > 1 and distance_mi <= 6 and is_raining == False and has_bike == False: #19
-    print(False)
 
-if distance_mi >1 and distance_mi <=6 and has_bike == True and is_raining == False: #20
-    print(True)
+# Média distância 
 
-if distance_mi > 6 and has_ride_share_app == True: #21
-    print(True)
+#if distance_mi > 1 and distance_mi <= 6 and is_raining == True and has_bike == False: #18
+    
+#if distance_mi > 1 and distance_mi <= 6 and is_raining == False and has_bike == False: #19
+    
 
-if distance_mi > 6 and has_car == True: #22
-    print(True)
+#if distance_mi >1 and distance_mi <=6 and has_bike == True and is_raining == False: #20
+    
 
-if distance_mi > 6 and has_car == False and has_ride_share_app == False: #23
-    print(False)
+# Longa distância
+
+#if distance_mi > 6 and has_ride_share_app == True: #21
+    
+
+#if distance_mi > 6 and has_car == True: #22
+    
+
+#if distance_mi > 6 and has_car == False and has_ride_share_app == False: #23
