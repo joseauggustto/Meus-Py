@@ -9,10 +9,10 @@
 # >= se esse valor é maior que esse ou igual
 # <= se esse valor é menor que esse ou igual
 
-print(3 > 5)
-print(5 < 9)
-print(5 == 5)
-print(5 != 5)
+#print(3 > 5)
+#print(5 < 9)
+#print(5 == 5)
+#print(5 != 5)
 
 # Em py a codicional mais básica é o if. Funciona assim:
 
@@ -26,10 +26,76 @@ if altura >= 1.75:
 
 #Quando a função if gera um 'false', aí então entra o comando else:
 
-peso = 74
-if peso >= 75:
-    print('Certo')
+peso = 75
+if peso > 95:
+    print('balão')
+else:
+   print('tá ok')
 
+carro = 1 
+if carro > 2:
+    print('rico')
+else:
+    print('pobre premium')
 
+# Para haver múltiplas condcições, é só usar o comando elif:
 
+age = 50
+if age > 30:
+    print('velho')
 
+elif age <= 10:
+    print('Vai estudar')
+
+# --------------------------------------------------------
+
+# Os valores truthy ou falsy servem para saber se os campos estão vazios ou não. 
+# Para checar, usa-se o comando bool()
+
+print(bool(2))
+print(bool('aí')) 
+
+print(bool(''))
+print(bool(0))
+
+#----------------------------------------------------
+
+# Existem trẽs operadores booleanos em python: and, or e not. 
+
+# Primeiro o and: ele vai checar os valores para ver se a condição é atendida. Podem ser vários.
+
+is_citizen = True
+age = 17 
+if is_citizen and age >=18:
+    print('Pode votar')
+
+else:
+    print('Rai pa la')
+
+# Agora o comando or
+# O 'or' vai ver se pelo menos uma das condições é atendida:
+
+age = 17
+is_employed = True
+is_white = False
+
+if age > 18 or is_employed or is_white:
+    print('tá empregado')
+
+else: 
+    print('sai daqui')
+
+# Por último o comando not. 
+# O comando not simplesmente converte qualquer valor. Se é true vira false e vice versa.
+
+print(not '')
+print(not 2)
+
+is_admin = True
+
+if not is_admin:
+    print('Access denied for non-administrators.')
+else:
+    print('Welcome, Administrator!')
+
+#Isso aqui foi dificil de entende, pqp
