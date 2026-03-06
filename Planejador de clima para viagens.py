@@ -1,11 +1,11 @@
 #Vamos lá...
-distance_mi =  0.6
+distance_mi =  0.9
 is_raining = True
 has_bike = True 
 has_car = False 
 has_ride_share_app = True 
 
-# -------------------------
+# --------------------------
 
 # Curta distância - até 1 milha. 
 if distance_mi == 0:
@@ -36,4 +36,3 @@ if distance_mi > 6:
         print(True)
     elif has_car == False and has_ride_share_app == False:
         print(False)
-
