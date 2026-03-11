@@ -70,36 +70,51 @@ print ("-" * 30)
 
 #Fórmula de Bhaskara
 
-continuar = "S"
+# continuar = "S"
 
-while continuar == "S":
+# while continuar == "S":
 
-    A = float(input("Digite o valor de A: "))
-    B = float(input("Digite o valor de B: "))
-    C = float(input("Digite o valor de C: "))
+#     A = float(input("Digite o valor de A: "))
+#     B = float(input("Digite o valor de B: "))
+#     C = float(input("Digite o valor de C: "))
 
-    if A == 0:
-        print("A equação é do primeiro grau!")
+#     if A == 0:
+#         print("A equação é do primeiro grau!")
 
-    else:
-        delta = (B ** 2) - (4 * A * C)
-        print("O valor de Delta é:", delta)
+#     else:
+#         delta = (B ** 2) - (4 * A * C)
+#         print("O valor de Delta é:", delta)
 
-        if delta < 0:
-            print("A equação não possui raízes reais, pois não existe raiz quadrada de número negativo no conjunto dos números reais.")
+#         if delta < 0:
+#             print("A equação não possui raízes reais, pois não existe raiz quadrada de número negativo no conjunto dos números reais.")
     
-        else:
-            x1 = ((-B) + delta ** 0.5) / (2 * A)
-            x2 = ((-B) - delta ** 0.5) / (2 * A)
-            print("O valor de X' é:", x1)
-            print("O valor de X'' é:", x2) 
+#         else:
+#             x1 = ((-B) + delta ** 0.5) / (2 * A)
+#             x2 = ((-B) - delta ** 0.5) / (2 * A)
+#             print("O valor de X' é:", x1)
+#             print("O valor de X'' é:", x2) 
 
-            if delta == 0:
-             print("A equação possui duas raízes reais iguais")
-            else:
-                print("A equação possui duas raízes reais e diferentes.")   
+#             if delta == 0:
+#              print("A equação possui duas raízes reais iguais")
+#             else:
+#                 print("A equação possui duas raízes reais e diferentes.")   
 
 
-    continuar = input("Deseja fazer outra equação? (S/N): ").upper()
+#     continuar = input("Deseja fazer outra equação? (S/N): ").upper()
 
-print("Fim do programa.")
+# print("Fim do programa.")                                                        (Desafio 11 concluído com máxima maestria!)
+
+
+# preco_produto = float(input("Digite o preço do produto: "))
+# desconto = float(input("Quantos porcento de desconto? "))
+
+# preco_promocional = preco_produto * (1 - (desconto / 100))
+
+# print("O preço final depois dos descontos será:", preco_promocional)           (Desafio 12 concluído, melhor que a pedida)
+
+# salario = float(input("Qual o salario? "))
+# aumento = float(input("Qual o aumento? "))
+
+# salario_final = salario + (salario * (aumento / 100))
+
+# print(f"Seu salário será de: R$ {salario_final:.2f}")          (Desafio 13 concluído, melhor que o esperado)
