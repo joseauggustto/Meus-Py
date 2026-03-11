@@ -52,3 +52,54 @@ print("-" * 30)
 # cm = distancia * 100
 # print("A distância em km de", distancia, "é:", km)
 # print("A distância em cm de", distancia, "é:", cm)   (Desafio 8 ok)
+
+print ("-" * 30)
+
+# carteira = float(input("Quantos R$ você tem? "))
+# conversao = carteira / 3.45
+# print("Você pode comprar US$", conversao, "em dólares.")   (Desafio 9 ok - Tão fácil mas tão difícil....)
+
+print ("-" * 30)
+
+# alt_parede = float(input("Qual a altura da parede? "))
+# larg_parede = float(input("Qual a largura da parede? "))
+# litros = (alt_parede * larg_parede) / 2
+# print("Para pintar a parede serão necessários", litros," litros de tinta.")   
+
+print ("-" * 30)
+
+#Fórmula de Bhaskara
+
+continuar = "S"
+
+while continuar == "S":
+
+    A = float(input("Digite o valor de A: "))
+    B = float(input("Digite o valor de B: "))
+    C = float(input("Digite o valor de C: "))
+
+    if A == 0:
+        print("A equação é do primeiro grau!")
+
+    else:
+        delta = (B ** 2) - (4 * A * C)
+        print("O valor de Delta é:", delta)
+
+        if delta < 0:
+            print("A equação não possui raízes reais, pois não existe raiz quadrada de número negativo no conjunto dos números reais.")
+    
+        else:
+            x1 = ((-B) + delta ** 0.5) / (2 * A)
+            x2 = ((-B) - delta ** 0.5) / (2 * A)
+            print("O valor de X' é:", x1)
+            print("O valor de X'' é:", x2) 
+
+            if delta == 0:
+             print("A equação possui duas raízes reais iguais")
+            else:
+                print("A equação possui duas raízes reais e diferentes.")   
+
+
+    continuar = input("Deseja fazer outra equação? (S/N): ").upper()
+
+print("Fim do programa.")
