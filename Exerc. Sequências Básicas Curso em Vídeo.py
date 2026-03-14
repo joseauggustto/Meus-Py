@@ -104,6 +104,7 @@ print ("-" * 30)
 
 # print("Fim do programa.")                                                        (Desafio 11 concluído com máxima maestria!)
 
+print ("-" * 30)
 
 # preco_produto = float(input("Digite o preço do produto: "))
 # desconto = float(input("Quantos porcento de desconto? "))
@@ -118,3 +119,37 @@ print ("-" * 30)
 # salario_final = salario + (salario * (aumento / 100))
 
 # print(f"Seu salário será de: R$ {salario_final:.2f}")          (Desafio 13 concluído, melhor que o esperado)
+
+print ("-" * 30)
+
+# km_percorrido = float(input("Quantos quilômetros foram rodados? "))
+# dias = float(input("Por quantos dis o carro foi alugado? "))
+
+# total = (90 * dias) + (km_percorrido * 0.20)
+
+# print(f"O total a ser pago será: R${total:.2f}")       (Desafio 14 ok)
+
+# mais = "S"
+# while mais == "S":
+
+#         dias = float(input("Quantos dias foram trabalhados? "))
+#         horas = 8
+#         por_hora = 25
+
+#         salario = dias * (horas * por_hora)
+
+#         print(f"Seu salário será: R${salario:.2f}")
+
+#         mais = input("Deseja continuar?").upper()               (Desafio 15 ok)
+
+# print("Fim") 
+
+print ("-" * 30)
+
+# cigarros_fumados_dia = int(input("Quantos são fumados? "))
+# quantos_anos_fumados = int(input("Por quantos anos? "))
+
+# total_perdido = ((cigarros_fumados_dia * 10) * (quantos_anos_fumados * 365)) / 1440
+
+# print(f"Você perdeu um total de: {total_perdido:.0f} dias.")       (Desafio final concluído)
+
