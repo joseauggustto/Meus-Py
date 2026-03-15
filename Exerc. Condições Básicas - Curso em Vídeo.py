@@ -83,16 +83,25 @@ print("-" * 30)
 #     print("Esse ano é bissexto")
 
 # else:
-#      print("Esse ano não é Bissexto")     (Desafio 21 ok)
+#      print("Esse ano não é Bissexto")                  (Desafio 21 ok)
 
 print("-" * 30)
 
-def idade(idade):
+nascimento = int(input("Em que ano você nasceu? "))
+
+idade = 2026 - nascimento
+
+idade_alistamento = 18
+
+if idade > idade_alistamento:
+    print(f"Você já passou {idade - 18} anos do alistamento.")
+
+elif idade == idade_alistamento:
+    print("Você precisa se alistar esse ano.")
     
-    if idade > 18:
-        return idade - 18
+else:
+    print(f"Faltam {18 - idade} para você se alistar")
+
+
     
-    else:
-        return 18 - idade
-    
-test = idade()
+

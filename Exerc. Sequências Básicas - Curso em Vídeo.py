@@ -83,10 +83,9 @@ print ("-" * 30)
 
 #     else:
 #         delta = (B ** 2) - (4 * A * C)
-#         print("O valor de Delta é:", delta)
 
 #         if delta < 0:
-#             print("A equação não possui raízes reais, pois não existe raiz quadrada de número negativo no conjunto dos números reais.")
+#             print(f"A raíz de Delta é {delta}: A equação não possui raízes reais.")
     
 #         else:
 #             x1 = ((-B) + delta ** 0.5) / (2 * A)
@@ -95,16 +94,16 @@ print ("-" * 30)
 #             print("O valor de X'' é:", x2) 
 
 #             if delta == 0:
-#              print("A equação possui duas raízes reais iguais")
+#                 print("A equação possui duas raízes reais iguais")
 #             else:
 #                 print("A equação possui duas raízes reais e diferentes.")   
 
 
 #     continuar = input("Deseja fazer outra equação? (S/N): ").upper()
 
-# print("Fim do programa.")                                                        (Desafio 11 concluído com máxima maestria!)
+# print("Fim do programa.")                                                      
 
-print ("-" * 30)
+# print ("-" * 30)
 
 # preco_produto = float(input("Digite o preço do produto: "))
 # desconto = float(input("Quantos porcento de desconto? "))
