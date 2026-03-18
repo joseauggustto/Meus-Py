@@ -37,7 +37,7 @@ def create_character(name, power, intelligence, charisma):
     return (f"{name}\n" 
             f"STR {p_bolinhas}\n" 
             f"INT {i_bolinhas}\n" 
-            f"CHA {c_bolinhas}\n")
+            f"CHA {c_bolinhas}")
     
 
 personagem = create_character("ren", 4, 2 ,1)
