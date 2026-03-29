@@ -103,3 +103,33 @@ print("-" * 30)
 #     print(f"Faltam {18 - idade} para você se alistar")          (Desafio 22 ok)
 
 
+print("-" * 30)
+
+# nome = input("Qual o seu nome? ")
+# sexo = input("Qual o seu sexo? (H/M)").upper()
+# compras = float(input("Qual o seu total em compras? "))
+
+# M = 13
+# H = 5
+
+# descontomulher = compras * (1 - (M / 100)) 
+# descontohomem = compras * (1 - (H / 100)) 
+
+# if sexo == "M":
+#     print(f"Olá, {nome}! Você terá desconto de 13%, seu total será: R${descontomulher}")
+
+# else:
+#     print(f"Olá,{nome}! Você terá desconto de 5%, seu total será: R${descontohomem}")            (Desafio 23 ok)
+
+
+print("-" * 30)
+
+# distancia = float(input("Qual a distacia a ser percorrida? "))
+
+# if distancia <= 200:
+#     print(f"Você pagará: R&{distancia * 0.50}")
+
+# else:
+#     print(f"Você pagará: R&{distancia * 0.45}")          (Desafio 24 ok)
+
+
