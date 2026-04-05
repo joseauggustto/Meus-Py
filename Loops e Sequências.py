@@ -176,12 +176,88 @@ Enumerate e Zip
 
 Para enumerar uma lista com seu respectivo numero, usamos a função enumerate.
 
-
-
+O comando zip é usado para unir duas listas com seus enumerates.
 
 """
 
-languages = ['Spanish', 'English', 'Russian', 'Chinese']
-for index, languages in enumerate(languages, start=1): 
-    print(f'Num {index} and language {languages}')
+# languages = ['Spanish', 'English', 'Russian', 'Chinese']
+# for index, language in enumerate(languages, 1):  #ou posso usar start=1 
+#     print(f'Num {index} language: {language}')
+
+# #--------------
+
+# developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
+# ids = [1, 2, 3, 4]
+
+# for name, id in zip(developers, ids):
+#     print(f"Name: {name}")
+#     print(f"ID: {id}")
+
+
+print("-" * 30)
+
+"""
+List Comprehensions 
+
+esse comando é usado para deixar o código menor e mais fácil de leitura. 
+
+a função filter é usada para filtrar em uma lista os dados de acordo com uma condicao espécifica
+
+a função map faz com que funções seja executadas em listas
+
+"""
+
+"""pares = []
+
+for num in range(21):
+    if num % 2 == 0:
+        pares.append(num)
+
+print(pares)
+
+# list comprehensions
+
+pares = [num for num in range(21) if num %2 == 0]
+print(pares)
+
+#---------------------
+
+# numeros = range(16)
+# resultado = [(num, "Par") if num %2 == 0 else (num, "Impar") for num in numeros]
+# print(resultado)
+
+words = ['tree', 'sky', 'mountain', 'river', 'cloud', 'sun']
+def palavra_longa(words):
+    return len(words) > 4
+palavra_longa = list(filter(palavra_longa, words))
+print(palavra_longa)
+
+longwords = list(filter(lambda w: len(w) > 4, words))
+print(longwords)
+
+#------------------
+
+num = [2, 4, 6, 9]
+
+def mult(num):
+    return (num * 2)
+
+result = list(map(mult, num))
+print(result)
+
+# ----------------------
+
+multi = list(map(lambda x: x * 2, num))
+print(multi)
+"""
+print("-" * 30)
+
+"""
+Lambda Functions 
+
+A função lambda serve para criar uma função descartável e rápida. Mas pode ser chamada de anonima.
+Essa função pode ser útil em casos especiais que é necessário fazer uma lógica rápida, mas em casos mais complexos é melhor criar uma função def.
+Os melhores casos para se usar é quando vai ser necessário mexer com filter e map.
+
+"""
 
