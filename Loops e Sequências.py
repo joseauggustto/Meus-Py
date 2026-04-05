@@ -1,43 +1,43 @@
 # Vamos lá...
-# Estudo sobra laços e seqûencias.
+"""Estudo sobra laços e seqûencias.
 
-# countries = ['Brazil', 'Australia', 'Suíça']
-# print(countries[2])
+countries = ['Brazil', 'Australia', 'Suíça']
+print(countries[2])
 
-# countries = ['Brazil', 'Australia', 'Suíça']
-# print(countries[-1])
+countries = ['Brazil', 'Australia', 'Suíça']
+print(countries[-1])
 
-# nome = "Augusto"
-# print(list(nome))
+nome = "Augusto"
+print(list(nome))
 
-# sei_la = [3, 4, 6, 3, 2 , 65, 6 , 67]
-# print(len(sei_la))
+sei_la = [3, 4, 6, 3, 2 , 65, 6 , 67]
+print(len(sei_la))
 
-# languages = ["espanhol", "english"]
-# languages[0] = "pt br"   # att valor, AAAAAAAA
-# print(languages)
+languages = ["espanhol", "english"]
+languages[0] = "pt br"   # att valor, AAAAAAAA
+print(languages)
 
-# languages = ["espanhol", "english"]
-# del languages[0]   # deletar valor da lista
-# print(languages)
+languages = ["espanhol", "english"]
+del languages[0]   # deletar valor da lista
+print(languages)
 
-# programming_languages = ['Python', 'Java', 'C++', 'Rust']    # saber se algo está ali...
-# print("Rust" in programming_languages)
-# print("JavaScripty" in programming_languages)
+programming_languages = ['Python', 'Java', 'C++', 'Rust']    # saber se algo está ali...
+print("Rust" in programming_languages)
+print("JavaScripty" in programming_languages)
 
-# developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
-# print(developer[2]) # vai dar a segunda lista de dentro
+developer = ['Alice', 25, ['Python', 'Rust', 'C++']]
+print(developer[2]) # vai dar a segunda lista de dentro
 
-# developer = ['Alice', 34, 'Rust Developer']
-# name, *rest = developer
-# print(name)
-# print(rest)
-
-# ------------------------
+developer = ['Alice', 34, 'Rust Developer']
+name, *rest = developer
+print(name)
+print(rest)
 
 """
 
+print("-" * 30)
 
+"""
 .append adiciona um novo elemento a lista, criando uma sub lista inside ()
 
 .extend faz com que adicione outros elementos na lista, sem criar sublista []
@@ -56,9 +56,8 @@
 
 o comando .index serve para procurar na lista um valor específico retornando sua posição. 
 
-
 """
-
+print("-" * 30)
 
 # numberss = [1, 2, 3, 4, 5]
 # numberss.append(6)
@@ -74,7 +73,115 @@ o comando .index serve para procurar na lista um valor específico retornando su
 # numbers.extend(outersnbrs)
 # print(numbers)
 
-alo = [1, 2, 3, 4, 5]
-alo.insert(3, 2.5)  #adicionar em um local específico...
-print(alo)
+# alo = [1, 2, 3, 4, 5]
+# alo.insert(3, 2.5)  #adicionar em um local específico...
+# print(alo)
+
+print("-" * 30)
+
+"""
+Tuplas em python são dados semelhantes a listas, a diferença é que listas são mutáveis e tuplas não. Listas são assim: [] e tuplas são assim ().
+
+Para acessar um elemento da tupla, use [].
+
+Para saber se algum dado está em uma tupla usa-se o in.
+
+O argumento sorted() + key=len organiza os elementos da tupla por comprimento.
+
+"""
+print("-" * 30)
+
+"""
+LOOPS
+
+Os loops é uma forma de repetir argumentos em python. 
+
+Para repetir uma lista no console, usamos o "for". ex: (for language in programming_languages)
+
+O comando char vai traçar letra por letra de uma string em um print. 
+
+temos o comando break e continue, são irmãos com propostas diferentes. O break para quando achar o item desejado e o exclui, o continue continua excluindo o item desejado.
+
+####
+
+# programming_languages = ['Rust', 'Java', 'Python', 'C++']
+
+# for languages in programming_languages:
+#     print(languages)
+
+
+# for char in 'Augusto':
+#     print(char)
+
+
+# categorias = ['Fruit', 'Vegetable']
+# foods = ['Apple', 'Carrot', 'Banana']
+
+# for category in categorias:
+#     for food in foods:
+#         print(category, food)
+
+"""
+
+print("-" * 30)
+
+# Jogo de advinhação 
+
+# correct_number = 3
+
+# while True:
+#     advinhar = int(input("Advinhe o número entre 1 e 10: "))
+
+#     if advinhar == correct_number:
+#         print("Você conseguiu!")
+#         break         #Descobri esse comando novo, muito bom! 
+#     else:
+#         print("Errou, tente novamente!")
+
+# palavras = ['sky', 'apple', 'rhythm', 'fly', 'orange']
+
+# for palavra in palavras:      # esse comando faz com que cada palavra da lista "palavras" seja armazenada temporariamente na váriavel 'palavra'. 
+#     for letras in palavra:     # esse comando é interno, ele vai rodar letra por letra da palavra armazenada temporariamente.
+#         if letras.lower() in "aeiou":    # o comando lower() tranforma tudo em minúscula pra não gerar erros e o "if in" vai ver se tem vogais dentro das palavras.
+#             print(f"'{palavra}' contem a vogal '{letras}'")
+#             break              # se ele achou uma vogal nas palavras, ele para e imprime, não vai ficar lendo mais o resto da palavra.
+#     else:                          # cometi um pequeno erro de indentação aqui, se o else estiver ligado ao if, ele vai imprimir uma condição para cada letra, e não só pra palavra
+#         print(f"'{palavra}' não tem vogal")
+
+
+"""
+RANGE
+
+o range é usado para criar uma sequencia de numeros inteiros.
+Sintaxe básica da função range: range(start, stop, step)
+O argumento stop é obrigatório, o start não tanto porque ele vai iniciar com 0 por padrão.
+
+"""
+# for num in range(4): # aqui ele vai gerar uma sequencia até chegar no 3, começando do 0.
+#     print(num)
+
+# for num in range(2, 6):
+#     print(num)
+
+# for num in range(2, 11, 2):
+#     print(num)
+
+# number = list(range(10))  #vai criar uma lista de número no range especificado.
+# print(number)
+
+print("-" * 30)
+
+"""
+Enumerate e Zip
+
+Para enumerar uma lista com seu respectivo numero, usamos a função enumerate.
+
+
+
+
+"""
+
+languages = ['Spanish', 'English', 'Russian', 'Chinese']
+for index, languages in enumerate(languages, start=1): 
+    print(f'Num {index} and language {languages}')
 
